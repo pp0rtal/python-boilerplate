@@ -1,0 +1,23 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+setuptools = "==47.2.0"
+pylint = "==2.5.0"
+black = "==19.10b0"
+isort = "==4.3.21"
+mypy = "==0.770"
+coverage = "==5.2"
+
+[packages]
+flask = "==1.1.2"
+# Flask's "itsdangerous" dependency generates a warning. It should be removed in the next version.
+itsdangerous = "==1.1.0"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
